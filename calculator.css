@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: rgb(132, 132, 252);
+}
+.cirle1{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    background: rgb(169, 169, 251);
+    top: 20%;
+    right: 38%;
+    border-radius: 100%;
+}
+.cirle2{
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    background: rgb(169, 169, 251);
+    top: 55%;
+    right: 20%;
+    border-radius: 100%;
+}
+.cirle3{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    background: rgb(169, 169, 251);
+    top: 85%;
+    right: 20%;
+    border-radius: 100%;
+}
+
+
+.header{
+    background: rgb(235, 170, 7);
+    color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+.header h2{
+    text-align: center;
+    color: #ffff;
+   text-shadow: 5px 10px 5px rgba(0, 0, 0, 0.7);
+}
+.calculator{
+    position: absolute;
+    left: 40%;
+    margin: 30px auto;
+    width: 280px;
+    height: 500px;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 0px 0px 15px black;
+    padding: 20px;
+}
+.calculator .parent{
+    margin: 10px auto;
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+.parent .screen{
+    width: 100%;
+    height: 120px;
+    border-bottom:3px solid gray ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.expression{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-align: right;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.child{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+}
+.operation{
+    width: 50px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    
+}
+
+.operation .btn-task{
+    width: 100%;
+    height: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px black;
+    background:gray;
+    
+}
+.operation .btn-task:hover{
+    background: transparent;
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+.operation1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    justify-content: center;
+   
+}
+.btn-task{
+    color: #ffff;
+}
+.operation1 .btn,.operation1 .btn-clear,.operation1 .btn-equal{
+    border-radius: 90%;
+    width: 43px;
+    height: 55px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    box-shadow: 0px 5px 8px black
+}
+.operation1 .btn:hover{
+    background: gray;
+    cursor: pointer;
+}
+.operation1 .btn-equal:hover{
+    cursor: pointer;
+    background: gray;
+}
+.operation1 .btn-clear:hover{
+    cursor: pointer;
+    background: gray;
+}
